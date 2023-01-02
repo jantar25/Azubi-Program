@@ -1,0 +1,85 @@
+:root{
+ --primary-blue: #1da1f2;
+ --primary-white: #ffffff;
+}
+
+body {
+    width:100vw;
+    height: 100vh;
+    background: var(--primary-blue);
+    color: var(--primary-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bounce {
+    height: max-content;
+    width: max-content;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation:bounce 2s infinite;
+}
+
+.bounce i {
+    font-size: 56px;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    } 40% {
+        transform: translateY(-50px);
+    } 60% {
+        transform: translateY(10px);
+    }
+}
+
+@-o-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    } 40% {
+        transform: translateY(-50px);
+    } 60% {
+        transform: translateY(10px);
+    }
+}
+
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    } 40% {
+        transform: translateY(-50px);
+    } 60% {
+        transform: translateY(10px);
+    }
+}
+
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    } 40% {
+        transform: translateY(-50px);
+    } 60% {
+        transform: translateY(10px);
+    }
+}
