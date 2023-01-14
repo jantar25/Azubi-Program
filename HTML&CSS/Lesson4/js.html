@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>JavaScript makes HTML pages more dynamic and interactive</h1>
+    <img 
+        src="./images/image1.jpg"
+        id="fisrtImage"
+        alt="salad_picture"
+        width="200" />
+    <img
+        src="./images/image2.jpg"
+        id="secondImage"
+        alt="meat_picture"
+        width="300" />
+    <p id="description">
+        Heathy food composed by the chicken meet with a boil of homemade salad.
+    </p>
+    <button onclick="domManipulation()">JavaScript Interaction</button>
+
+    <script>
+        const domManipulation = () => {
+            document.getElementById("fisrtImage").width="300";
+            document.getElementById("fisrtImage").style.border="5px solid orange";
+            document.getElementById("description").style.color="orange";
+            document.getElementById("description").style.backgroundColor="black";
+            document.getElementById("description").style.fontSize="25px";
+            document.getElementById("description").style.fontFamily="monospace";
+            document.getElementById("description").style.textAlign="center";
+            document.getElementById("secondImage").src="./images/image3.jpg";
+        }
+    </script>
+    <noscript>
+        Sorry!JavaScript is not supported or disabled in your browser,
+        You need to enable JavaScript to run this app.
+    </noscript>
+</body>
+</html>
