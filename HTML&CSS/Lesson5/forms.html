@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .table-head{
+            text-align: center;
+            background-color: rgb(245, 245, 173);
+            color: red;
+            font-weight: 700;
+            font-size: 30px;
+            padding: 0px 10px;
+        }
+        .table-footer{
+            text-align: center;
+        }
+        .table-footer button{
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+        tr{background-color:#00BFFF;padding: 0px 10px;}
+        td{padding: 5px 20px;}
+    </style>
+</head>
+<body>
+  <form class="container">
+    <table border="2">
+        <tr>
+          <td class="table-head" colspan="2">Registration Form</td>
+        </tr>
+        <tr >
+          <td>Enter Name</td>
+          <td><input /></td>
+        </tr>
+        <tr>
+          <td>Enter Password</td>
+          <td><input /></td>
+        </tr>
+        <tr>
+          <td><label for="address">Enter Address</label></td>
+          <td><textarea id="address" name="address" rows="4" cols="21"></textarea></td>
+        </tr>
+        <tr>
+          <td>Select Game</td>
+          <td>
+            <div>
+              <input type="checkbox" id="hockey" name="hockey" value="hockey" />
+              <label for="hockey">Hockey</label>
+            </div>
+            <div>
+              <input type="checkbox" id="football" name="football" value="football" />
+              <label for="hockey">Football</label>
+            </div>
+            <div>
+              <input type="checkbox" id="badminton" name="badminton" value="badminton" />
+              <label for="hockey">Badminton</label>
+            </div>
+            <div>
+              <input type="checkbox" id="cricket" name="cricket" value="cricket" />
+              <label for="hockey">Cricket</label>
+            </div>
+            <div>
+              <input type="checkbox" id="volleyball" name="volleyball" value="volleyball" />
+              <label for="hockey">Volleyball</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="image">Select your age</label></td>
+          <td>
+            <select name="age" id="age">
+              <option value="20">20 Years</option>
+              <option value="21">21 Years</option>
+              <option value="22">22 Years</option>
+              <option value="23">23 Years</option>
+              <option value="24">24 Years</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="image">Select Photo</label></td>
+          <td><input type="file" id="image" name="image" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"  class="table-footer">
+            <button type="button">Click Me</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit Form</button>
+          </td>
+        </tr>
+    </table>
+  </form> 
+</body>
+</html>
