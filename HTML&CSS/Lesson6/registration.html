@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            border: 2px solid brown;
+            padding: 5px 10px;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="full-name">Full name:</label><br>
+        <input type="text" id="full-name" name="full-name" required
+        maxlength="100" placeholder="Full name" /><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required /><br><br>
+
+        <label for="birth-Date">Birth Date:</label><br>
+        <input type="date" id="birth-Date" name="birth-Date" max="2022-01-20" /><br><br>
+
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br><br>
+
+        <label for="country">Country of Birth:</label><br>
+        <select id="country" name="country">
+            <option value="DR Congo" selected>DR Congo</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Togo">Togo</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Guinea">Guinea</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Uganda">Uganda</option>
+        </select><br><br>
+
+        <label>Favourite programming languages:</label><br>
+        <input type="checkbox" name="Javascript" value="Javascript" id="Javascript" />
+        <label for="Javascript">Javascript</label><br>
+        <input type="checkbox" name="Java" value="Java" id="Java" />
+        <label for="Java">Java</label><br>
+        <input type="checkbox" name="php" value="php" id="php" />
+        <label for="php">Php</label><br>
+        <input type="checkbox" name="c" value="c" id="c" />
+        <label for="c">C#</label><br>
+        <input type="checkbox" name="python" value="python" id="python" />
+        <label for="python">Python</label><br><br>
+
+        <label for="imageUpload">Upload Image:</label><br>
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" /><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea rows="5" cols="30" name="message" id="message" placeholder="Message here...">
+        </textarea><br><br>
+
+         <input type="submit" name="submit" value="Submit" />
+    </form>    
+</body>
+</html>
