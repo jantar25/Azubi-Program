@@ -1,7 +1,7 @@
 body {
     border: 2px solid black;
     width: 60%;
-    margin: auto;
+    margin: 10px auto;
     padding: 0 20px;
 }
 
@@ -32,7 +32,8 @@ p span {
 
 .myEduc {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .myEduc span {
@@ -42,6 +43,7 @@ p span {
 
 .myEduc p {
     width: 70%;
+    margin: 0 0 10px 0;
 }
 
 body>div {
