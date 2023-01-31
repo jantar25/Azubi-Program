@@ -1,0 +1,49 @@
+body {
+    border: 2px solid black;
+    width: 60%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font: 24px 900 Georgia;
+    color: blue;
+    background-color: lightgray;
+    letter-spacing: 0.6em;
+    word-spacing: 2em;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+h2 {
+    font: 18px Georgia;
+    color: darkred;
+    letter-spacing: 0.4em;
+    margin-bottom: 0;
+}
+
+p span {
+    font-style: italic;
+}
+
+.personaldata {
+    line-height: 5px;
+}
+
+.myEduc {
+    display: flex;
+    align-items: center;
+}
+
+.myEduc span {
+    font-weight: bold;
+    width: 30%;
+}
+
+.myEduc p {
+    width: 70%;
+}
+
+body>div {
+    margin-top: 40px;
+}
