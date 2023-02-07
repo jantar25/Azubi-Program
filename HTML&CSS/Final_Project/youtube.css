@@ -114,6 +114,10 @@ img {
     padding: 10px;
 }
 
+.side-bar:hover {
+overflow-y: scroll;
+}
+
 .links{
     padding: 10px 20px;
     display: flex;
@@ -126,9 +130,19 @@ img {
     text-decoration: none;
 }
 
-.links img{
+.links img {
     height: 25px;
     width: 25px;
+    margin-right: 20px;
+}
+
+.links .subscriber {
+    border-radius: 50%;
+}
+
+.links i {
+    width: 25px;
+    font-size: 20px;
     margin-right: 20px;
 }
 
