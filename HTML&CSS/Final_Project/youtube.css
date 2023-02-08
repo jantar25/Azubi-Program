@@ -9,7 +9,7 @@ body {
 
 /* NAVBAR */
 .nav-container {
-    height: 50px;
+    height: 55px;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -39,7 +39,7 @@ body {
 
 form {
     position: relative;
-    height: 30px;
+    height: 38px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ input {
 }
 
 .search-icon {
-    width: 30px;
+    width: 28px;
     height: 100%;
     padding: 0 20px;
     background-color: #f0f0f0;
@@ -78,24 +78,16 @@ img {
     width: 90px;
 }
 
-.notifications-icon{
+.notifications-icon,.upload-icon,.voice-icon{
     width: 25px;
-    margin-right: 20px;
-}
-
-.upload-icon {
-    width: 25px;
-    margin-right: 20px;
-}
-
-.voice-icon {
-    width: 25px;
+    margin: 0 10px;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
+    margin-left: 15px;
 }
 
 .avatar img {
@@ -105,11 +97,11 @@ img {
 /* SIDEBAR */
 .side-bar {
     position: fixed;
-    top: 50px;
+    top: 55px;
     left: 0;
-    min-width: 250px;
-    width: 250px;
-    height: calc(100vh - 50px);
+    min-width: 200px;
+    width: 200px;
+    height: calc(100vh - 55px);
     background: #fff;
     padding: 10px;
 }
@@ -119,7 +111,7 @@ overflow-y: scroll;
 }
 
 .links{
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -162,18 +154,19 @@ overflow-y: scroll;
 
 .filters{
     position: fixed;
-    left: 270px;
-    top: 50px;
-    width: calc(100% - 270px);
+    left: 220px;
+    top: 55;
+    width: calc(100% - 220px);
     height: 50px;
     background: #fff;
     padding: 0 20px;
     margin: 0;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
-.filter-options{
+.filter{
     flex:0 0 auto;
     padding: 5px 10px;
     border-radius: 5px;
@@ -182,29 +175,29 @@ overflow-y: scroll;
     text-transform: capitalize;
     margin-right: 10px;
     color: #242424;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
 }
 
-.filter-options.active{
+.filter.active{
     color: #fff;
     background: #242424;
 }
 
 /* VIDEO-CARD */
 .video-card-container {
-    width: calc(100% - 310px);
+    width: calc(100% - 240px);
     margin-top: 60px;
-    margin-left: 270px;
-    padding: 20px;
+    margin-left: 220px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: 20px 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 10px;
     overflow-x: hidden;
 }
 
 .card{
-    min-height: 250px;
+    min-height: 220px;
     height: auto;
 }
 
@@ -238,7 +231,7 @@ overflow-y: scroll;
     height: 100px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
