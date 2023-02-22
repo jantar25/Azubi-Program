@@ -23,5 +23,5 @@ const sum = (array) => {
     return sumation
 }
 
-console.log(range(1,10))
+console.log(range(1,10,2))
 console.log(sum([2,4,5,9,0,-6]))
