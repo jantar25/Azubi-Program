@@ -1,4 +1,48 @@
+h1 {
+    text-align: center;
+}
 
+form {
+    width: 30%;
+    margin: 40px auto;
+    padding: 20px; 
+    background: #e4dcdc;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+form input {
+    flex:2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form label {
+    flex: 1;
+}
+
+.submit-container {
+    position: relative;
+    height: 20px;
+    margin-top: 20px;
+}
+
+form button {
+    position: absolute;
+    right:0px;
+    padding: 10px;
+    font-size: 15px;
+    background: rgb(29, 141, 29);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 table {
     margin: 20px auto;
@@ -19,4 +63,25 @@ th,td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
+  }
+
+  @media screen and (max-width: 875px) {
+    form {
+      width: 60%;
+    }
+
+    table {
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 445px) {
+    form {
+      width: 90%;
+      padding:10px;
+    }
+
+    table {
+        width: 95%;
+    }
   }
