@@ -1,0 +1,22 @@
+
+
+table {
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #191a19;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e4dcdc;
+}
+
+th,td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
