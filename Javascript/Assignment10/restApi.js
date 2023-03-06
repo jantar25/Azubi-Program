@@ -24,7 +24,7 @@ const fetchDataWithPromise = () => {
 // ASYNC/AWAIT
 const fetchDataWithAsyncAwait = async () => {
     try {
-        const rawData = await fetch('https://reqre.in/api/users?page=2',{
+        const rawData = await fetch('https://reqres.in/api/users?page=2',{
             headers: { 'content-Type': 'application/json'},
             method: 'GET'
         })
