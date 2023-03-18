@@ -1,0 +1,8 @@
+.qrCode-space {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(216, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
