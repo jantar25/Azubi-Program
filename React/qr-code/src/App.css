@@ -6,3 +6,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.qr-container {
+  width: 250px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.qr-container img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.text-container h3,p {
+text-align: center;
+}
+
+.text-container p {
+ font-size: 15px;
+ color: grey;
+}
