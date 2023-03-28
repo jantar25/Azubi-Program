@@ -6,11 +6,17 @@ const Item = ({card}) => {
   return (
     <div 
     className={`card-conatiner ${card.title === 'SEDANS'?
-    'sedans' : card.title === 'SUVS'? 'suvs' : 'luxury'}`} >
+    'sedans' : card.title === 'SUVS'?
+    'suvs' : 'luxury'}`} >
         <img src={card.icon} alt={card.title} />
         <h2 className='title'>{card.title}</h2>
         <p className='description'>{card.description}</p>
-        <button>Learn More</button>
+        <button 
+          className={card.title === 'SEDANS'?
+            'sedansBtn' : card.title === 'SUVS'?
+            'suvsBtn' : 'luxuryBtn'}>
+              Learn More
+        </button>
     </div>
   )
 }

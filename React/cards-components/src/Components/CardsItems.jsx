@@ -7,11 +7,7 @@ import data from '../data'
 const CardsItems = () => {
   return (
     <div className='cards-container'>
-        {data.map(card => (
-            <div key={card.id}>
-                <Item card={card} />
-            </div>
-        ))}
+        {data.map(card => <Item key={card.id} card={card} />)}
     </div>
   )
 }
