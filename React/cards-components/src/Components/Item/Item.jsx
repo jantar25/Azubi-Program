@@ -4,19 +4,11 @@ import './Item.css'
 
 const Item = ({card}) => {
   return (
-    <div 
-    className={`card-conatiner ${card.title === 'SEDANS'?
-    'sedans' : card.title === 'SUVS'?
-    'suvs' : 'luxury'}`} >
+    <div className='card-container'>
         <img src={card.icon} alt={card.title} />
         <h2 className='title'>{card.title}</h2>
         <p className='description'>{card.description}</p>
-        <button 
-          className={card.title === 'SEDANS'?
-            'sedansBtn' : card.title === 'SUVS'?
-            'suvsBtn' : 'luxuryBtn'}>
-              Learn More
-        </button>
+        <button>Learn More</button>
     </div>
   )
 }
