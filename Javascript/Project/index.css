@@ -10,7 +10,9 @@
     font-family: poppins, 'sans-serif';
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .2s linear;
 }
 
 /* HEADER  */
@@ -29,32 +31,44 @@ header {
 header .logo {
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 header .logo i {
-    font-size: 20px;
-    margin-right: 5px;
+    margin-right: 3px;
     color: var(--bright-color);
 }
 
-header .logo h1 {
-    display: none;
+header .navbar {
+    position: absolute;
+    padding: 5px 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-header .navibar {
-    display: none;
+header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .navibar a {
-    text-decoration: none;
+header .navbar a {
+    display: block;
     margin: 0 3px;
     color: var(--light-color);
     font-weight: 600;
+    font-size: 1rem;
     border-radius: .5rem;
-    padding: 5px 10px;
+    padding: .5rem;
+    margin: .5rem;
+    background: #eee;
 }
 
-header .navibar a:hover {
+header .navbar a:hover {
     color: #fff;
     background: var(--bright-color);
 }
@@ -75,16 +89,27 @@ header .icons i:hover {
 }
 
 @media only screen and (min-width: 320px) {
-    header .logo h1 {
-        display: inline;
-        font-size: 23px;
+    header .logo {
+        font-size: 1.4rem;
     }
 }
-@media only screen and (min-width: 768px) {
-    header .navibar {
+@media only screen and (min-width: 650px) {
+    header .navbar {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none; 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: inline;
+        margin: 0 3px;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: .5rem;
+        padding: 3px 5px;
+        background: transparent;
     }
     header .icons .fa-bars {
         display: none;
