@@ -8,9 +8,11 @@ let toggleSearchBar = false
 const toggleSearch = () => {
     if(!toggleSearchBar) {
         searchForm.style.display = 'flex';
+        searchBtn.style.background = '#f55556';
         toggleSearchBar = true;
     } else {
         searchForm.style.display = 'none';
+        searchBtn.style.background = '#eee';
         toggleSearchBar = false;
     }  
 }
@@ -25,6 +27,7 @@ window.onscroll = () => {
     menuBtn.classList.remove('fa-times');
     navbar.classList.remove('active');
     searchForm.style.display = 'none';
+    searchBtn.style.background = '#eee';
     toggleSearchBar = false;
 }
 
