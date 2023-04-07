@@ -116,8 +116,11 @@ header .icons i:hover {
     }
 }
 
+
+/* SEARCH FORM  */
+
 .searchForm{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
@@ -155,4 +158,12 @@ header .icons i:hover {
     #searchForm {
         width: 50%;
     }
+}
+
+
+/* HIRO  */
+
+.hiro {
+    height: 100vh;
+    background: var(--light-color);
 }
