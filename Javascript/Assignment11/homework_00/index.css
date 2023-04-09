@@ -1,0 +1,28 @@
+
+body {
+    background: gray;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+#button {
+    cursor: pointer;
+}
+
+.arrow1,.arrow2 {
+    color: green;
+}
+
+.dropdownMenu,
+.arrow2,
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
