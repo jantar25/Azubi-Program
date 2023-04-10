@@ -1,0 +1,18 @@
+/* TESTIMONIAL SECTION  */
+
+.testimonial-container {
+    padding: 4rem 4%;
+}
+
+.testimonial-title-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.testimonial-title-container h3 {
+    color: var(--black);
+}
+
+.testimonial-title-container h1 {
+    color: var(--bright-color);
+}
