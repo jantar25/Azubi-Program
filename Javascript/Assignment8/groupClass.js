@@ -2,24 +2,42 @@ class Group {
     constructor() {
         this.group = [];
       }
-
+      
     add(member) {
-      const newGroup = [...this.group,this.group.concat(member)]
-        return newGroup;
+      if (!this.group.includes(member)) {
+        this.group.push(member);
+      }
     }
 
     delete(member) {
-      return this.group.map(item => item)
+      let index = this.group.indexOf(member);
+      if (index !== -1) {
+        this.group.splice(index, 1);
+      }
     }
 
-    has() {
-
+    has(member) {
+      return this.group.includes(member);
     }
 
-    from () {
-
+    static from(a) {
+      let g = new Group();
+      for (let member of a) {
+        g.add(member);
+      }
+      console.log(g)
+      return g;
     }
 }
 
-console.log(new Group().add('Jantar'))
-console.log(new Group().delete('Glody'))
+let group = Group.from([1,2,3,4,5,6,7,8,9]);
+console.log(group.has(7));
+// → true
+console.log(group.has(11));
+// → false
+group.add(50);
+console.log(group.has(50));
+// → true
+group.delete(7);
+console.log(group.has(7));
+// → false
