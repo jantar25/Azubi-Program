@@ -52,7 +52,7 @@ color: var(--bright-color);
     color: #fff;
     padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 5px;
     background: var(--bright-color);
 }
 
