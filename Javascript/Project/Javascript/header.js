@@ -1,8 +1,9 @@
-let menuBtn = document.querySelector("#menu")
-let searchBtn = document.querySelector("#searchBtn") 
-let navbar = document.querySelector(".navbar")
-let searchForm = document.querySelector(".searchForm")
+const menuBtn = document.querySelector("#menu")
+const searchBtn = document.querySelector("#searchBtn") 
+const navbar = document.querySelector(".navbar")
+const searchForm = document.querySelector(".searchForm")
 let toggleSearchBar = false
+
 
 // Toggle Search Bar
 const toggleSearch = () => {
@@ -33,3 +34,4 @@ window.onscroll = () => {
 
 menuBtn.addEventListener('click',toggleMenu)
 searchBtn.addEventListener('click',toggleSearch)
+

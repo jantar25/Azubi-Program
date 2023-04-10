@@ -1,0 +1,26 @@
+/* OUR DISHES SECTION  */
+
+.dishes-container {
+    padding: 1rem 4%;
+}
+
+.dishes-title-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.dishes-title-container h3 {
+    color: var(--bright-color);
+}
+
+.dishes-title-container h1 {
+    color: var(--black);
+}
+
+.dishes {
+    display: flex;
+}
+
+.dish img{
+    width: 200px;
+}
