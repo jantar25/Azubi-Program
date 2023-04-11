@@ -18,3 +18,7 @@
 .order-title-container h1 {
     color: var(--bright-color);
 }
+
+.order {
+    margin: 0 auto;
+}
