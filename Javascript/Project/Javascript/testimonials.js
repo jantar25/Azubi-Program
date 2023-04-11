@@ -25,6 +25,13 @@ const testimonials = [
         stars:5,
         description:"Clean food with coocked with organic groceries, very tasty and healthier.",
         image:glody
+    },
+    {
+        id:4,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
     }
 ]
 
