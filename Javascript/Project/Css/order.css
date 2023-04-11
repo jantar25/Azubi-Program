@@ -1,0 +1,20 @@
+/* ORDER SECTION  */
+
+.order-container {
+    padding: 2rem 4%;
+    background: #eee;
+
+}
+
+.order-title-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.order-title-container h3 {
+    color: var(--black);
+}
+
+.order-title-container h1 {
+    color: var(--bright-color);
+}

@@ -60,4 +60,5 @@
 
 .testimony p {
     color: var(--light-color);
+    font-size: .8rem;
 }

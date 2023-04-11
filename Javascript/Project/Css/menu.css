@@ -38,11 +38,36 @@
     border-radius: 5px;
 }
 
+.menu-item h2 {
+    color: var(--black)
+}
+
+.menu-item p {
+    color: var(--light-color);
+    font-size: .8rem;
+    
+}
+
 .menu-item .price-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+}
+
+.menu-item .price-container button {
+    font-size: 1rem;
+    color: #fff;
+    background: var(--black);
+    padding: .2rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu-item .price-container p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bright-color);
 }
 
 @media only screen and (min-width: 650px) {

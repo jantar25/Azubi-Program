@@ -95,7 +95,7 @@ menuContainer.innerHTML = MenuItems.map(item => `
         <p>${item.description}</p>
         <div class='price-container'>
             <button>Add to Cart</button>
-            <p>$ ${item.price}</p>
+            <p>${item.price} Rwf</p>
         </div>
     </div>
 `).join('')
