@@ -16,3 +16,48 @@
 .testimonial-title-container h1 {
     color: var(--bright-color);
 }
+
+.testimonials {
+    display: flex;
+    padding: 2rem 0;
+}
+
+.testimony {
+    padding: 1rem;
+    margin: .5rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.testimony .doublequotes {
+    font-size: 2rem;
+    color: var(--bright-color);
+}
+
+.testimony-header {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.testimony-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.testimony-header .title h4 {
+    color: var(--black);
+}
+
+.testimony-header .title .stars {
+    font-size: 10px;
+    color: green;
+}
+
+.testimony p {
+    color: var(--light-color);
+}
