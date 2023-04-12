@@ -26,6 +26,7 @@ header .logo h3{
     display: none;
     font-size: 1.5rem;
     font-weight: bolder;
+    color: var(--black);
 }
 
 header .navbar {
