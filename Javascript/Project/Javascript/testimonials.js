@@ -1,7 +1,7 @@
 const glody = './Assets/glody.jpg'
 const jemy = './Assets/jemy.jpg'
 const chris = './Assets/chris.jpg'
-const testimonialsContainer = document.querySelector('.testimonials')
+const testimonialsContainer = document.querySelector('.swiper-wrapper')
 
 
 const testimonials = [
@@ -32,7 +32,42 @@ const testimonials = [
         stars:5,
         description:"Clean food with coocked with organic groceries, very tasty and healthier.",
         image:glody
-    }
+    },
+    {
+        id:5,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
+    },
+    {
+        id:6,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
+    },
+    {
+        id:7,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
+    },
+    {
+        id:8,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
+    },   
+    {
+        id:9,
+        ownerNames:'Glody Jantar',
+        stars:5,
+        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
+        image:glody
+    },
 ]
 
 const displayStars = (starNumber) => {
@@ -44,11 +79,11 @@ const displayStars = (starNumber) => {
 }
 
 testimonialsContainer.innerHTML = testimonials.map(testimony => `
-    <div class="testimony">
+    <div class="swiper-slide">
         <div class="doublequotes">
             <i class="fa-solid fa-quote-left"></i>
         </div>
-        <div class="testimony-header">
+        <div class="swiper-slide-header">
             <img src=${testimony.image} alt=${testimony.ownerNames} />
             <div class='title'>
                 <h4>${testimony.ownerNames}</h4>
@@ -58,3 +93,31 @@ testimonialsContainer.innerHTML = testimonials.map(testimony => `
         <p>${testimony.description}</p>
     </div>
 `).join('')
+
+const swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    slidesPerView:4,
+    centerSlide:true,
+    fade:true,
+    loop:true,
+    grabCursor:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets:true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView:1,
+        },
+        640: {
+            slidesPerView:2,
+        },
+        768: {
+            slidesPerView:3,
+        },
+        1024: {
+            slidesPerView:4,
+        },
+    }
+  });
