@@ -79,11 +79,11 @@ const displayStars = (starNumber) => {
 }
 
 testimonialsContainer.innerHTML = testimonials.map(testimony => `
-    <div class="swiper-slide">
+    <div class="swiper-slide slide">
         <div class="doublequotes">
             <i class="fa-solid fa-quote-left"></i>
         </div>
-        <div class="swiper-slide-header">
+        <div class="slide-header">
             <img src=${testimony.image} alt=${testimony.ownerNames} />
             <div class='title'>
                 <h4>${testimony.ownerNames}</h4>
@@ -95,8 +95,8 @@ testimonialsContainer.innerHTML = testimonials.map(testimony => `
 `).join('')
 
 const swiper = new Swiper('.mySwiper', {
-    spaceBetween: 30,
-    slidesPerView:4,
+    spaceBetween: 10,
+    slidesPerView:1,
     centerSlide:true,
     fade:true,
     loop:true,
