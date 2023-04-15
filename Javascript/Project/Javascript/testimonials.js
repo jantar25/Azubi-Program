@@ -95,7 +95,7 @@ testimonialsContainer.innerHTML = testimonials.map(testimony => `
 `).join('')
 
 const swiper = new Swiper('.mySwiper', {
-    spaceBetween: 10,
+    spaceBetween: 20,
     slidesPerView:1,
     centerSlide:true,
     fade:true,

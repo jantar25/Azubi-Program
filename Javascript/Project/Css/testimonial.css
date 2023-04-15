@@ -1,7 +1,7 @@
 /* TESTIMONIAL SECTION  */
 
 .testimonial-container {
-    padding: 4rem 4%;
+    padding: 1rem 4%;
 }
 
 .testimonial-title-container {
@@ -22,6 +22,7 @@
   }
 
 .slide-container {
+    display: inline;
     margin: 40px 0;
     border-radius: 5px;
 }
@@ -68,4 +69,10 @@
     font-size: .8rem;
     padding: 0 1rem 2rem;
     text-align: center;
+}
+
+@media only screen and (min-width: 650px) {
+    .testimonial-container {
+        padding: 4rem 4%;
+    }
 }

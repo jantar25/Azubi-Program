@@ -1,7 +1,7 @@
 /* MANU SECTION  */
 
 .menu-container {
-    padding: 4rem 4%;
+    padding: 1rem 4%;
     background: #eee;
 }
 
@@ -76,6 +76,9 @@
 @media only screen and (min-width: 650px) {
     .menu {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-container {
+        padding: 4rem 4%;
     }
 }
 

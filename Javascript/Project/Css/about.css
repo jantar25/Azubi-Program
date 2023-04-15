@@ -1,7 +1,7 @@
 /* ABOUT US SECTION  */
 
 .about-container {
-    padding: 4rem 4%;
+    padding: 1rem 4%;
 }
 
 .about-title-container {
@@ -37,6 +37,7 @@
 
 .about .right {
     flex: 1;
+    text-align: center;
 }
 
 .right h1 {
@@ -85,6 +86,12 @@
 @media only screen and (min-width: 450px) {
     .right .services {
         flex-direction: row;
+    }
+    .about-container {
+        padding: 4rem 4%;
+    }
+    .about .right {
+        text-align: start;
     }
 }
 @media only screen and (min-width: 650px) {
