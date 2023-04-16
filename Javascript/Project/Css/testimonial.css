@@ -18,13 +18,12 @@
 }
 
 .swiper {
-    margin: 0 20px;
+    width: 100%;
+    height: 100%;
   }
 
 .slide-container {
-    display: inline;
     margin: 40px 0;
-    border-radius: 5px;
 }
 
 .slide {

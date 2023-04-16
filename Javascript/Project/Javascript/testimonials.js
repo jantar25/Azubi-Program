@@ -29,52 +29,36 @@ const testimonials = [
     {
         id:4,
         ownerNames:'Glody Jantar',
-        stars:5,
+        stars:1,
         description:"Clean food with coocked with organic groceries, very tasty and healthier.",
         image:glody
     },
     {
         id:5,
         ownerNames:'Glody Jantar',
-        stars:5,
+        stars:2,
         description:"Clean food with coocked with organic groceries, very tasty and healthier.",
         image:glody
     },
     {
         id:6,
         ownerNames:'Glody Jantar',
-        stars:5,
-        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
-        image:glody
-    },
-    {
-        id:7,
-        ownerNames:'Glody Jantar',
-        stars:5,
-        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
-        image:glody
-    },
-    {
-        id:8,
-        ownerNames:'Glody Jantar',
-        stars:5,
-        description:"Clean food with coocked with organic groceries, very tasty and healthier.",
-        image:glody
-    },   
-    {
-        id:9,
-        ownerNames:'Glody Jantar',
-        stars:5,
+        stars:0,
         description:"Clean food with coocked with organic groceries, very tasty and healthier.",
         image:glody
     },
 ]
 
 const displayStars = (starNumber) => {
+    const uncheckedStars = 5-starNumber
     let stars = "";
     for (let i=0; i < starNumber; i++) {
         stars +='<i class="fas fa-star"></i>' 
     }
+    for (let j=0; j < uncheckedStars; j++) {
+        stars +='<i class="fa-regular fa-star"></i>' 
+    }
+
     return stars
 }
 
@@ -97,7 +81,6 @@ testimonialsContainer.innerHTML = testimonials.map(testimony => `
 const swiper = new Swiper('.mySwiper', {
     spaceBetween: 20,
     slidesPerView:1,
-    centerSlide:true,
     fade:true,
     loop:true,
     grabCursor:true,
