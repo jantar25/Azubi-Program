@@ -6,10 +6,12 @@ const triangleArea = (base,height) => {
 }
 console.log(triangleArea(3,6))
 
+
 const incrementNumber = (number) => {
     return number+=1
 }
 console.log(incrementNumber(7))
+
 
 const numberComparison = (numberA,numberB) => {
     const sum = numberA+numberB;
